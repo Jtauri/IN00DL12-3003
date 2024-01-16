@@ -1,0 +1,37 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+th {
+    text-align: left;
+    background-color: #ccc;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table {
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+    background-color: #ccc;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+    }
+
+td {
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+th:last-child, td:last-child {
+    border-right: 1px solid #333;
+}
+
+tr:nth-child(2), tr:nth-child(5) {
+    background-color: #ffffcc;
+}
