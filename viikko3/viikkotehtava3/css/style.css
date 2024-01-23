@@ -103,25 +103,3 @@ i {
         min-height: 60px;
     }
 }
-
-@media screen and (max-width: 1200px) {
-    #banner {
-        min-height: 150px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    #banner {
-        min-height: 100px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    #logo img {
-        width: 300px;
-    }
-
-    #banner {
-        min-height: 60px;
-    }
-}
