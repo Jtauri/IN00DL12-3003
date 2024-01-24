@@ -1,0 +1,48 @@
+@import "variables";
+@import "reset";
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $accent-color;
+        font-weight: bold;
+    }
+}
+
+div#container {
+    display: flex;
+    flex-direction: column;
+}
+
+div#content {
+    display: inherit;
+
+    section {
+        display: inherit;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    aside {
+        width: 20vw;
+    }
+}
+
+article {
+    flex: 33.33%;
+
+    div {
+        margin: $general-margin;
+        border: 1px solid $grey-foreground-color;
+
+        img {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
