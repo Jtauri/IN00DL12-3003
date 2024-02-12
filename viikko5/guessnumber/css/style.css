@@ -1,0 +1,13 @@
+div#container {
+    background-color: gray;
+    height: 50vh;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div {
+    margin: 2em 0;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+form > div {
+    margin: 1em 0;
+}
+
+form input {
+    width: 30px;
+}

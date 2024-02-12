@@ -21,7 +21,7 @@
         aside {
             width: 100vw;
             padding: $general-padding;
-            padding-left: $general-padding / 2;
+            padding-left: calc($general-padding / 2);
         }
     }
 }
