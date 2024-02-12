@@ -1,10 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: black;
-    margin: 30px;
 }
 
-img {
-    width: 30%;
-    height: auto;
+div#dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img#diceImg {
+    width: 150px;
+    margin: auto;
+    display: block;
 }
