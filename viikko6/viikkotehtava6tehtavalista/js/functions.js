@@ -16,7 +16,7 @@ const addTableRow = (text) => {
     const col2 = row.insertCell(1)
 
     col1.innerHTML = text
-    col2.innerHTML = '<a href="./index.html#" onclick="deleteRow(\'' + text + '\')">X</a>'
+    col2.innerHTML = '<a href="#" onclick="deleteRow(\'' + text + '\')">X</a>'
 }
 
 input.addEventListener('keypress', (event) => {
