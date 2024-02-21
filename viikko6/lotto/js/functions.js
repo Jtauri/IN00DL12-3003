@@ -22,6 +22,8 @@ const drawNewNumbers = () => {
         plusNumbers.push(numbers[i])
         numbers.splice(i, 1)
     }
+    numbers.sort((a, b) => a - b)
+    plusNumbers.sort((a, b) => a - b)
     addTableRow(numbers, primaryNumbers)
     addTableRow(plusNumbers, luckyNumbers)
 }
