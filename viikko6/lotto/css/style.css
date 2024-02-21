@@ -1,0 +1,23 @@
+table {
+    font-size: 13px;
+}
+
+td {
+    height: 27px;
+    width: 27px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #999999 black black #999999;
+    border-width: thin;
+}
+
+p {
+     font-weight: bold;
+ }
