@@ -1,39 +1,38 @@
 const primaryNumbers = document.querySelector('#numbers')
 const luckyNumbers = document.querySelector('#luckyNumbers')
-const randomNumbers = []
+const numbers = []
+const plusNumbers = []
 
 const newRandomNumbers = () => {
-    const numbers = []
+    const newNumbers = []
     for (let i = 0; i < 9; i++) {
         while (true) {
             const number = Math.floor(Math.random() * 37 + 1)
-            if (!numbers.includes(number)) {
-                numbers.push(number)
+            if (!newNumbers.includes(number)) {
+                newNumbers.push(number)
                 break
             }
         }
     }
-    return numbers
+    return newNumbers
 }
 
-randomNumbers.push(...newRandomNumbers()) // Spread operaattori jakaa taulukon alkioiksi. Oishan nuo voinut suoraan kyl tunkea sinne jo funktiossa?
-
-const addPrimaryNumbers = () => {
-    addTableRow(randomNumbers, 0, primaryNumbers)
+const drawNewNumbers = () => {
+    for (let i = 6; i < 8; i++) {
+        plusNumbers.push(numbers[i])
+        numbers.splice(i, 1)
+    }
+    addTableRow(numbers, primaryNumbers)
+    addTableRow(plusNumbers, luckyNumbers)
 }
 
-const addLuckNumbers = () => {
-    addTableRow(randomNumbers, 7, luckyNumbers)
-}
-
-const addTableRow = (numbers, index, chosenNumbers) => {
+const addTableRow = (showNumbers, chosenNumbers) => {
     const row = chosenNumbers.insertRow()
-    for (let i = index; i < numbers.length; i++) {
-        const col = row.insertCell(i-index)
-        col.innerHTML = numbers[i]
+    for (let i = 0; i < showNumbers.length; i++) {
+        const col = row.insertCell(i)
+        col.innerHTML = showNumbers[i]
     }
 }
 
-
-addPrimaryNumbers()
-addLuckNumbers()
+numbers.push(...newRandomNumbers())
+drawNewNumbers()
