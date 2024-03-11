@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: blue;
+}
+
+
+
+form div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+form label {
+    display: inline-block;
+    width: 80px;
+}
+
+p {
+    font-size: 12px;
+}
